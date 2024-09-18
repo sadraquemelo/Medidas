@@ -1,2 +1,17 @@
 
 
+*{
+    /*(*) usado para informar que existem itens que irão recair sobre todo o HTML*/
+    margin: 0;/* Zerado a margin (top,bottom,right left)*/
+    padding: 0;/*zerando o preenchimento*/
+    font-family: Georgia, 'Times New Roman', Times, serif;/*habilitando uma fonte padraão para toda página */
+    list-style: none;/*removendo os estilos de listas*/
+}
+
+header {
+    background-color:green;
+    padding: 25px;
+    display: flex;
+    justify-content: center;/* Justificando do contéudo -aqui podemos ajustar conforme nossa necessidade*/
+    align-items: center;
+}

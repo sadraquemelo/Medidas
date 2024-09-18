@@ -67,4 +67,109 @@ CSS
 
 Uso recomendado:
 
-Para criar tamanhos de fonte e espaçamentos constantes em toda a aplicação
+Para criar tamanhos de fonte e espaçamentos constantes em toda a aplicação, baseando -se no Tamanho da fonte raiz (<html>).
+
+Ideal para layouts e tipografia que precisam ser consistente indepoendetemente do tamanho da fonte dos elementos pais.
+
+Quando você quer um tamaho que seja relativo apenas ao elemento pai especifico e não à raiz.
+
+Exemplo de uso:
+
+html
+
+ <div class="container">
+
+      <div class="text">
+             <p> Lorem </p>
+        </div>
+
+CSS
+
+html {
+    font-size: 16px; /* Tamanho base da fonte */
+}
+.text {
+    font-size: 2 rem;/*32px(2 * 16px )*/
+}
+
+4.(Viewport Height)
+
+Uso recomendado:
+
+Para definir tamanhos de altura relativos à altura d viewport, como para criar seções de
+tela cheia ou elementos que devem ocupar uma porcentagem da altura da tela.
+Ideal para layouts que devem se ajustar  a `altura de altuara de tela.
+
+Quando evitar:
+
+Para elementos que não precisam ser sensivéis ao tamanho da viewport e devem ter tamanhos fixos ou proporcionais ao conteúdo.
+
+Exemplo de uso:
+
+html
+<section>
+testar em tamanhos de telas diferentes.
+
+css
+.fullscreen-section {
+    heigt: 100vh; /*100% da altura da viewport*/
+    width:50vw
+    bacground-color:black;
+}
+5.vw (Viewport Width)
+
+Uso recomendado:
+
+Para difinir tamanhos de largura relativos à largura relativos à largura da wiewport, útil para criar layouts responsivos ou elementos que devem ajustar a larguar da tela .
+
+Quando evitar:
+
+Para elementos cuja larguara não deve deopender da largura da viewport e deve ser fixa ou proporcional ao conteúdo.
+
+Exemplo de uso:
+
+html
+<section class="responsive-element">
+         <p>Lorem</p>
+    </section>
+
+ css
+
+ .responsive-element {
+       width: 50vw; / *50 da largura da viewport */
+       height:50vh;
+       bacground-color: yelow;
+
+ }        
+ 
+Uso recomendado:
+
+Para definir tamanhos relativos ao tamanhp do 
+elemento pai, ideal para layouts flexívéi e adaptáveis .
+Útil para definir larguara e alturas e alturas de elementos dentro de containers com tamanhpos variávesi .
+
+Quando evitar :
+ Quando o tamamho não deve depender do elemento pai não tiver um tamanho fixo ou previsível.
+
+ Exemplo de uso:
+
+ html 
+
+ <div class="parents">
+
+      <div class"child">
+    
+</div>
+
+</div>
+
+CSS
+
+.parent {
+    width: 500px; /**/Larguar fixa do pai
+    bacground-color: green;
+}
+ .child{
+    width: 50% /* 50% de larguara de elemento pai (250px)*/
+    bacground-color:pink;
+ }
