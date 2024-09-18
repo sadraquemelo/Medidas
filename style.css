@@ -3,15 +3,64 @@
 *{
     /*(*) usado para informar que existem itens que irão recair sobre todo o HTML*/
     margin: 0;/* Zerado a margin (top,bottom,right left)*/
-    padding: 0;/*zerando o preenchimento*/
     font-family: Georgia, 'Times New Roman', Times, serif;/*habilitando uma fonte padraão para toda página */
-    list-style: none;/*removendo os estilos de listas*/
+    line-height: 1.6;/*Distância entre linhas*/
 }
 
 header {
-    background-color:green;
-    padding: 25px;
+    background-color:rgb(0, 119, 128);
+    color: white;
+    padding: 1rem;/*Padding rem para consistência com tamanho da fonte raiz*/
     display: flex;
     justify-content: center;/* Justificando do contéudo -aqui podemos ajustar conforme nossa necessidade*/
     align-items: center;
+}
+.main-content {
+    padding: 2 rem;
+    color: white;
+   
+}
+
+,section {
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 8px;/*Espaço abaixo de cada seçaõ*/
+    position: relative; 
+}
+
+.section-1 {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.section-2 {
+    background-color: #2ecc71;
+    color:white
+}
+
+.section-3 {
+    background-color: #f39c12;
+    color: white;
+}
+.box {
+    background-color: #fff;
+    color:#000;
+    padding: 2rem;/*Padding aumentado para maior visibilidade*/
+    margin: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1,2rem;/*Tamanho da fonte aumentado para maior legibilidade*/
+    box-sizing: border-box;/*Inclui padding e borda no cálculo da larguar*/
+}
+
+.box-1, .box-2, .box-3, .box-4, .box-5, .box-6 {
+    width: calc(50% - 2 rem);/*Largura das caixas AJUSTADA PARA CABER DUAS POR LINHA com espaçamentos */
+    float: left;/*Trabalha com a distribuiçaõ dos elementos */
+}
+
+/*Limpeza do float*/
+.section::after{
+    content: "";/*adiciona um elemento invsivél após o conteúdo da seção*/
+    display: table;/* Faz com que o elemento invisivél se comporte como um  bloco, forçando o contêiner a incluir elementos flutuantes */
+    clear: both;/*Garante que o contêiner "limpe" os elementos flutuantes , evitando problemas de layout*/
 }
