@@ -1,0 +1,57 @@
+header {
+    padding: 100px;
+    background-color: blue;
+
+}
+
+
+.section1 {
+    padding: 230px;
+    background-color: orange;
+
+}
+
+.section2 {
+    padding: 230px;
+    background-color:green;
+}
+
+
+footer {
+    padding: 100px;
+    background-color: white;
+}
+
+
+
+
+@media (max-width: 490px) {
+    header {
+        background-color: blueviolet;
+    }
+
+    .section1{
+        background-color: yellow;
+        display: block;
+        flex-direction: column;
+
+    }
+
+    .section2{
+        background-color:red ;
+        display: block;
+    }
+
+        footer {
+            background-color: coral;
+        }
+    
+}
+
+
+@media (min-width 600px)and(max-width 1024px) {
+    
+}
+/*  max-width largura maxima .O elemento não pode ser maior que esse valor */
+
+/* mini width Largura minima. O elemento não pode ser maior que esse valor Obs.O mini width crescendo de 480px para cima , e permanecendo no minímo estabelecido 480px */
