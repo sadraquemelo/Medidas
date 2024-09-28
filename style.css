@@ -94,3 +94,23 @@ header {
         width: calc(33.333% - 2 rem);/* Largura de 33.333% para três caixas por linha*/
     }
 }
+
+footer {
+    padding: 15px;
+   background-color: black;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+}

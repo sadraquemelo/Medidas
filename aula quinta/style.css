@@ -8,7 +8,7 @@
 
 
 html {
-    width: 100%;
+    width: 100%;/*Largura e altura total*/
     height: 100vh;/*viewport*/
 }
 
@@ -28,21 +28,127 @@ header {
     box-shadow: 0 0.21rem 0.5rem white;/*Peimeiro valor sombra a Direita (0) segundo valor sombra Bottom (0.21rem) terceiro valor gradient da sombra (0.5rem)*/
 }
 
-header img {
-    color: white;
-    font-size: ;
+header i {
+    color: rgb(5, 83, 18);
+    font-size: 6em;/**/
 
 }
 
     header button {
         width: 13rem;
         height: 1.5rem;
-        background-color: aqua;
-        border-radius: 1rem;
+        background-color:#426b65;
+        border-radius: 0.4rem;
         padding: 1.3rem;
-        color: whitw;
+        color: white;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+   
+.section-01 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #baab6a;
+    width: 100%;
+    padding: min(20vh, 6rem);
 
+}
+
+.section-02 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #baab6a;
+    width: 100%;
+    padding: min(20vh, 6rem);
+
+}
+
+.div-01 p {
+    font-size: 2em;
+    margin: 1.2em;
+}
+
+.div-02 img {
+    width: 30rem;
+    margin: 5rem auto;
+    display: block;/*Garantido que a imagem se comporta como um bloco*/
+   
+}
+
+footer {
+    background-color: brown;
+    width: 100%;
+    padding: min(10vh,4rem);
+}
+
+footer {
+    padding: 15px;
+   background-color: black;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+
+
+@media(max-width:830px) {
+    header i {
+        font-size: 5.5em;
+}
+
+header button {
+    width: 10rem;
+    height: 0.8rem;
+}
+
+.section-01 {
+   padding: 9rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+
+
+.section-02 {
+    padding: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+ }
+
+.div-01 p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: left;
+    width: 100%;
+    margin: 2em;
+}
+
+
+
+.div-02 img {
+    width: 20rem;
+    margin: 0 2rem;
+}
+
+}
