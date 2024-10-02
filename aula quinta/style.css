@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*Garante todo o conteúdo preenchimento/padding seja incluido no cálculo da largura,evitando que o contéudo ultrapasse a tela */
-}
+    
+    
 
 
 html {
@@ -14,7 +14,7 @@ html {
 
 header {
     padding: min(5vh, 4rem);/*ajustado o padding para ser mais flexível*/
-    background-color: #c5a898;
+    background-color: hwb(21 60% 23%);
     width: 100%;/*Clocamos a largura para 100% do espaço disponivel*/
     display: flex;
     justify-content: space-between;

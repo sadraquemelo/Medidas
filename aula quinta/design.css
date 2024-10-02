@@ -1,0 +1,21 @@
+/*Tudo que colocar a resposta em todo site*/
+* {
+margin: 0;
+padding: 0;
+box-sizing:border-box ;
+/*Garante todo o conteúdo preenchimento/padding seja incluido no cálculo da largura,evitando que o contéudo ultrapasse a tela */
+}
+
+html {
+    width: 100%;/*Altura e Largura total*/
+    height: 100vh;/*viewporting*/
+}
+
+header {
+    padding: (5vh, 4rem);/*Ajustando o padding para ser mais flexível*/
+    background-color:hwb(21 60% 23%) ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
