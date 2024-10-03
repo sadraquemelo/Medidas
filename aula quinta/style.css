@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+}
     
 
 
@@ -15,7 +15,7 @@ html {
 header {
     padding: min(5vh, 4rem);/*ajustado o padding para ser mais flexível*/
     background-color: hwb(21 60% 23%);
-    width: 100%;/*Clocamos a largura para 100% do espaço disponivel*/
+    width: 100%;/*Colocamos a largura para 100% do espaço disponivel*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@ header {
     top: 0;/*Espaçamento superior zerado,fazendo com que o Header fique grudado ao top*/
     left: 0;/*Espaçamento a esquerda zerado, fazendo com que o Header fique grudado à esquerda*/
     z-index: 999;/*Eixo de Profundidade(Eixo Cartesiano)*/
-    box-shadow: 0 0.21rem 0.5rem white;/*Peimeiro valor sombra a Direita (0) segundo valor sombra Bottom (0.21rem) terceiro valor gradient da sombra (0.5rem)*/
+    box-shadow: 0 0.21rem 0.5rem white;/*Primeiro valor sombra a Direita (0) segundo valor sombra Bottom (0.21rem) terceiro valor gradient da sombra (0.5rem)*/
 }
 
 header i {
@@ -33,6 +33,8 @@ header i {
     font-size: 6em;/**/
 
 }
+
+
 
     header button {
         width: 13rem;
@@ -91,9 +93,6 @@ header i {
     display: block;/*Garantido que a imagem se comporta como um bloco*/
    
 }
-
-
-
 
 
 .container {

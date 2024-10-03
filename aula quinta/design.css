@@ -14,20 +14,151 @@ html {
 header {
     padding: (5vh, 4rem);/*Ajustando o padding para ser mais flexível*/
     background-color:hwb(21 60% 23%) ;
-    width: 100%;
+    width: 100%;/*Colocamos a largura para 100% do espaço disponivel*/
     display: flex;
     justify-content: space-between ;
+    align-items: center;/*Aqui começamos o posicionamento do Header*/
+    position:sticky;/*Posicionamento do Header usando o Stick, sendo um posicionamento fixo */
+    top: 0;/*Espaçamento superior zerado,fazendo com que o Header fique grudado ao top*/
+    left: 0;/*Espaçamento esquerda zerado, fazenodo com que o Header fique grudado à esquerda */
+    z-index: 999;/*Eixo de profundidade (Eixo Cartesiano)*/
+    box-shadow: 0 0,21rem 0.5rem white;/*Primeiro valor sombra a Direita (0) segundo valor sombra Bottom (0.21rem) terceiro valor gradiente da sombra (0.5rem)*/
+}
+
+header i {
+    color: rgb(5, 83, 18);
+    font-size: 6em;
+}
+
+header li {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    gap: 40px;
+    justify-content: center;
     align-items: center;
 }
 
-.main-content {
-    padding: 2rem;
+header button {
+    width: 13rem;
+    height: 1,5rem;
+    background-color: #426b65;
+    border-radius: 0.4rem;
+    padding: 1.3rem;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.section {
-    padding: 2em;
-    margin-bottom: 2em;
-    border-radius: 8px;
-    position: relative;
+.section-01 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #baab6a;
+    width: 100%;
+    padding: min(20vh, 6rem);
+}
+
+.section-02 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #baab6a;
+    width: 100%;
+    padding: min(20vh, 6rem);
+}
+
+.section-03 {
+    background-color: #fbea80;/*Alterei a cor para diferenciar as sections */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: /*Alteramos de 100vw para 100%*/;
+}
+
+.div-02 img {
+    width: 30rem;
+    margin: 1.2em;
+}
+
+.div-02 img {
+    width: 30rem;
+    margin: 5rem auto;
+    display: block;/*Garantido que a imagem se comporta como um bloco*/
+}
+
+.container {
+    display: flex;/*Cria um contêiner flexivel*/
+    position: relative;/*Permite que os elementos filhos sejam posicionados em relação a este contêiner*/
+    justify-content: center;/*Centraliza os itens horizontalmente*/
+    align-items: center;/*Centraliza os itens verticalmente */
+    margin-bottom: 10rem;/*Adiciona espaço abaixo do container*/
+    flex-wrap: wrap;/*Permite que os itens se movam para uma nova linha se necessário */
+    z-index: 1;/*Define a ordem de sopbreposição do contêiner */
+
+}
+
+.container .card {
+    position: relative; /*Permite que elementos filhos sejam posicionados em relação ao Cartão*/
+    width: 200px;/*Define o tamanho do cartão*/
+    height: 400px;/*Altura do Cartão*/
+    margin: 30px;/*Adiciona espaço ao redor de cada cartão*/
+    box-shadow: 20px 20px 50px; rgb(22, 12, 41, 0.699);/*Cria uma sombra ao redor do cartão */
+    border-radius: 15px;/*Arredonda os cantos do cartão*/
+    background: rgb(223, 167, 223, 0.288);/*Define uma cor de fundo com transparência */
+    justify-content: center;/*Justificando o conteúdo ao centro*/
+    align-items: center;/*Alinhando os itens ao centro*/
+    border-top: 1px solid rgb(255, 255, 255, 0.5);/*Borda superior*/
+    border-left: 1px solid rgba(255, 255, 255, 0.5);/*Borda esquerda*/
+}
+
+.content {
+    padding: 20px;/*Adicione espaço interno ao redor do conteúdo */
+    text-align: center;/*Centraliza o texto dentro do elemento */
+    transform: translateY(50px);/*Move o conteúdo 50px para baixo inicialamente */
+    opacity: 0.2;/*Define transparência inicial como 20% */
+    transition: 0.5s;/*Cria uma transiçaõ suave  para mudanças nas propriedades */
+}
+
+.content :hover {
+    transform: translateY(0px);/*Move o conteúdo para sua posição*/
+    opacity: 1;/*Aumenta a opacidade para 100% ao passar o mouse */
+    transition: 0.5s;/*Cria uma transição suave para mudadnçãs nas propriedades */
+}
+
+.content h2 {
+    position: absolute;/*Posiciona o título de forma absoluta em relação ao contêiner pai */
+    right: 30px;/*Alinha o título 30px à direita do contêiner*/
+    font-size: 5rem;/*Define um tamanho de fonte grande para um título*/
+    color: rgb(128, 128, 128, 0.5);/*Define uma cor cinza com 50% de opacidade*/
+    pointer-events: none;/*Desativa eventos de ponteiro, tornando o elemento não clicavél */
+
+}
+
+.content p {
+    font-size: 1.8;/*Define um tamanho de fonte para o subtitulo */
+    color: rgb(41, 40, 40);/*Define a cor do subtítulo como um tom escuro */
+    z-index: 1;/*Define a ordem de sobreposição para garantir que o subtitulo esteja acima de outros elementos */
+}
+
+.content p {
+    font-size: 0.8em;/*Define um tamanho de fonte menor para o parágrafo*/
+    color: rgb(65, 63, 63);/*Define a cor do páragrafo como um tom escuro */
+    font-weight: 300;/*Define o peso da fonte como leve  */
+    margin-top: 4rem;/*Adiciona uma margem superior de 4rem para espaçamento */
+
+}
+
+.content a {
+    position: relative;/*Define a posição do link como relativa, permitindo ajustes de posicionamento */
+    display: inline-block;/*Faz o link se comportar como um bloco inline */
+    padding: 8px 20px;/*Adiciona padding ao redor do texto do link */
+    margin-top: 2.7rem;/*Adiciona uma margem superior de 2.7rem para espaçamento */
+    background: white;/*Define o fundo do link como branco */
+    color: black;/*Define  a cor do texto do link como preto */
+    text-decoration: none;/*Remove o sublinhado padrão dos links*/
+    border-radius: 15px;/*Arredonda os cantos do link */
+    font-weight: 500;/*Define o peso da fonte como seminegrito */
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.2);/*Adciona uma sombra ao redor do link para efeito de profundidade */
 }
