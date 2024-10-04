@@ -110,7 +110,7 @@ header li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: /*Alteramos de 100vw para 100%*/;
+    width: 100%;/*Alteramos de 100vw para 100%*/
 }
 .div-02 {
     display: flex;
@@ -171,10 +171,19 @@ header li {
 
 }
 
+.content h3 {
+    font-size: 1.8em;/*Define um tamanho de fonte para o sutítulo*/
+    color: rgb(41, 40, 40);/*Define a cor do sutítulo como um tom escuro*/
+    z-index: 1;/*Define a ordem de sobreposição para garantir que o subtitulo esteja acima de outros elementos*/
+
+}
+
 .content p {
     font-size: 1.8;/*Define um tamanho de fonte para o subtitulo */
     color: rgb(41, 40, 40);/*Define a cor do subtítulo como um tom escuro */
     z-index: 1;/*Define a ordem de sobreposição para garantir que o subtitulo esteja acima de outros elementos */
+    margin-top: 4rem;/*Adiciona uma margem superior de 4rem para espaçamento */
+    
 }
 
 .content p {
