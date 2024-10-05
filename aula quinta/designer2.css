@@ -7,36 +7,57 @@ font-family: Georgia, 'Times New Roman', Times, serif;/*Habilitando uma fonte pa
 list-style: none;/*Removendoos estilos de listas */
     
 }
-
 header {
-    background-color: red;
-    padding: 15px;
+    padding: (10vh, 4rem);/*Ajustando o padding para ser mais flexível*/
+    background-color:hwb(21 60% 23%) ;
+    width: 100%;/*Colocamos a largura para 100% do espaço disponivel*/
     display: flex;
-    justify-content: space-around;/*Justificando o conteúdo - aqui podemos ajustar conforme nossa necessidade*/
+    justify-content: space-evenly;
+    align-items: center;/*Aqui começamos o posicionamento do Header*/
+    position:sticky;/*Posicionamento do Header usando o Stick, sendo um posicionamento fixo */
+    top: 0;/*Espaçamento superior zerado,fazendo com que o Header fique grudado ao top*/
+    left: 0;/*Espaçamento esquerda zerado, fazenodo com que o Header fique grudado à esquerda */
+    z-index: 999;/*Eixo de profundidade (Eixo Cartesiano)*/
+    box-shadow: 0 0.21rem 0.5rem white;/*Primeiro valor sombra a Direita (0) segundo valor sombra Bottom (0.21rem) terceiro valor gradiente da sombra (0.5rem)*/
+}
+header div {
+    margin: 0px 10px;
+}
+
+header i {
+    color: rgb(5, 83, 18);
+    font-size: 6em;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
     align-items: center;
-}
-/*Chamamos header img para estilizar*/
-header img {
-    width: 100px;
-    height: auto;
+    gap: 40px;
 }
 
-header nav ul {
-    display: flex;/*Tornamos nossa Lista não Ordenada em (Flex),deixando os itens pertecentes a ela, lado a lado */
+
+header button {
+    width: 13rem;
+    height: 1,5rem;
+    background-color: #426b65;
+    border-radius: 0.4rem;
+    padding: 1.3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header a {
+    text-decoration: none;
+    color: white;
 }
 
-header nav ul li {
-    list-style: none;/*Estilo de Lista*/
-    margin-right: 10px;
-}
-
-header nav ul li a {
-    text-decoration: none;/*Decoração do texto (sublinhado)desabilitando(none)*/
-    color: antiquewhite;/*cor da letra*/
-}
+header li {
+    list-style
 
 .section-1 {
-    background-image: url(coffee-7897414_1280\ \(1\).jpg);
+    background-image: url();
     padding: 250px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -55,7 +76,7 @@ header nav ul li a {
 
 .section-2 {
     padding: 250px;
-    background-color: rgba(226, 43, 101, 0.89);
+    background-color: #baab6a;
     background-position: center;
     display: flex;
     justify-content: space-evenly;
@@ -102,8 +123,8 @@ header nav ul li a {
 }
 
 footer {
-    padding: 15px;
-    background-color: black;
+    padding: 50px;
+    background-color: hwb(21 60% 23%) ;
 }
 
 footer nav ul {

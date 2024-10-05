@@ -12,11 +12,11 @@ html {
 }
 
 header {
-    padding: (5vh, 4rem);/*Ajustando o padding para ser mais flexível*/
+    padding: (10vh, 4rem);/*Ajustando o padding para ser mais flexível*/
     background-color:hwb(21 60% 23%) ;
     width: 100%;/*Colocamos a largura para 100% do espaço disponivel*/
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-evenly;
     align-items: center;/*Aqui começamos o posicionamento do Header*/
     position:sticky;/*Posicionamento do Header usando o Stick, sendo um posicionamento fixo */
     top: 0;/*Espaçamento superior zerado,fazendo com que o Header fique grudado ao top*/
@@ -80,6 +80,7 @@ header li {
     background-color: #baab6a;
     width: 100%;
     padding: min(20vh, 6rem);
+    
 }
 .section-01 h1{
     font-size: 29px;
@@ -88,6 +89,45 @@ header li {
 .section-01 p {
     font-size: 20px;
 }
+
+.div-01 h1 {
+    margin: 2rem 0;
+}
+
+.div-01 {
+    background-color: rgba(255, 255, 255, 0.253);
+    padding: 2em;
+    margin: 0 2em;
+}
+
+.div-01 p {
+    margin: 0 0;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+
+.div-02 {
+    display: flex;
+}
+
+
+.div-02 img {
+    width: 20rem;
+    margin: 5rem auto;
+    display: block;/*Garantido que a imagem se comporta como um bloco*/
+    border-radius: 15px;
+    opacity: 1; /*a imagem está 100% visível*/
+}
+
+.div-02 img:hover{
+ opacity: 0.5; /*50% de opacidade*/
+ transition: 0.2s;
+ cursor: pointer;
+}
+
+
 
 .section-02 h2 {
     font-size: 29px;
@@ -112,16 +152,6 @@ header li {
     align-items: center;
     width: 100%;/*Alteramos de 100vw para 100%*/
 }
-.div-02 {
-    display: flex;
-}
-
-
-.div-02 img {
-    width: 20rem;
-    margin: 5rem auto;
-    display: block;/*Garantido que a imagem se comporta como um bloco*/
-}
 
 .container {
     display: flex;/*Cria um contêiner flexivel*/
@@ -139,7 +169,7 @@ header li {
     width: 200px;/*Define o tamanho do cartão*/
     height: 400px;/*Altura do Cartão*/
     margin: 30px;/*Adiciona espaço ao redor de cada cartão*/
-    box-shadow: 20px 20px 50px; rgb(22, 12, 41, 0.699);/*Cria uma sombra ao redor do cartão */
+    box-shadow: 20px 20px 50px rgb(22, 12, 41, 0.699);/*Cria uma sombra ao redor do cartão */
     border-radius: 15px;/*Arredonda os cantos do cartão*/
     background: rgb(223, 167, 223, 0.288);/*Define uma cor de fundo com transparência */
     justify-content: center;/*Justificando o conteúdo ao centro*/
