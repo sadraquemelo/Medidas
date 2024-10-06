@@ -132,9 +132,12 @@ header li {
 .section-02 h2 {
     font-size: 29px;
 }
+
+
 .section-02 p {
     font-size: 20px;
 }
+
 
 .section-02 {
     display: flex;
